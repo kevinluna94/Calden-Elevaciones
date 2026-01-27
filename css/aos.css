@@ -1,0 +1,54 @@
+/* Custom AOS animations */
+[data-aos] {
+    pointer-events: none;
+}
+
+[data-aos].aos-animate {
+    pointer-events: auto;
+}
+
+.aos-init {
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Custom animation delays */
+[data-aos-delay="50"] {
+    transition-delay: 50ms;
+}
+
+[data-aos-delay="100"] {
+    transition-delay: 100ms;
+}
+
+[data-aos-delay="150"] {
+    transition-delay: 150ms;
+}
+
+[data-aos-delay="200"] {
+    transition-delay: 200ms;
+}
+
+[data-aos-delay="250"] {
+    transition-delay: 250ms;
+}
+
+[data-aos-delay="300"] {
+    transition-delay: 300ms;
+}
+
+[data-aos-delay="350"] {
+    transition-delay: 350ms;
+}
+
+[data-aos-delay="400"] {
+    transition-delay: 400ms;
+}
+
+[data-aos-delay="450"] {
+    transition-delay: 450ms;
+}
+
+[data-aos-delay="500"] {
+    transition-delay: 500ms;
+}

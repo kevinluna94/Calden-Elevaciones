@@ -1,0 +1,111 @@
+Quiero crear una pagina Web relacionada a Elevaciones de Alturas "Caldén Elevaciones"
+debe ser muy representativo al oficio
+la pagina web debe ser institucional
+
+debe contener una pagina principal.
+Pagina de inicio con Hero, una galeria de trabajos en una grilla de 3x 3 de bootstrap, un mapa de ubicacion para encontrarlos y un cta para contacto, 
+
+Segunda pagina de about,
+
+Tercera pagina de contacto
+
+debe tener un boton de whatsapp flotante.
+
+Navbar con su respectivo logo la imagen prode subirla y hamburguesa para celulares desplegable. Usaras bootstrap para la responsividad.
+
+Quiero un hero de Inicio con un video de fondo uno horizontal para escritorios y otro vertical para celulares. de fondo y delante texto!
+este video debe mostrar las elevaciones o la actividad
+por ahora pone imagenes y videos representativos de stock en todas las paginas, 
+
+
+en el footer debaja de copy debes poner una linea Desarrollado por Kevin Luna con mi logo
+este debe ser un link que llevara a mi portafolio!
+
+Debes darme todos los codigos separados Html, CSS, Js y gs y la estructura de carpetas y archivos
+preparar meta description y keywords para un excelente seo en cada pagina
+
+toda la pagina debe tener efectos de trancicion al scrollear ,
+todo debe verse muy pro orientado a un ux excelente.
+
+ahora te pasare el contenido minimo de la pagina
+
+
+
+Página Web Caldén Elevaciones
+
+Inicio
+Título Principal:
+Caldén. ELEVACIONES
+
+Subtítulo/Descripción Corta:
+Servicio de izaje seguro, puntual y eficiente.
+Todo aquello que no ingrese por medios convencionales -ascensor o escalera-.
+
+Elevaciones y Trabajos en Altura:
+
+Grúa elevando elementos grandes (ej. marco de ventana, paneles).
+Trabajadores instalando vidrios en un edificio.
+Vista de edificios en construcción con andamios.
+Edificios residenciales modernos.
+Nuestra grúa en acción, con personal capacitado.
+Materiales y Productos que Elevamos:
+
+
+Historia y Misión:
+Caldén nace de la iniciativa de dos jóvenes con una misma visión: ofrecer un servicio de izaje seguro, puntual y eficiente. Javier, su fundador, cuenta con años de experiencia como izador, lo que nos permite entender cada maniobra desde la práctica y la responsabilidad.
+
+¿Qué Hacemos?
+Trabajamos con grúa móvil y equipo certificado, que se arma por piezas en el lugar que necesites. Alcanzamos hasta 45 pisos y 400 kg de carga.
+
+Nuestra grúa está homologada y certificada, operada por personal capacitado.
+
+Trabajamos en:
+Obra.
+Residencia.
+
+¿Qué Subimos? (Ejemplos de materiales y elementos que elevamos):
+Vidrios.
+Perfiles.
+Piedras.
+Porcelanato.
+Mármol.
+Mamparas.
+Tinas de baño.
+Jacuzzi Hidrospa.
+Y más... Todo aquello que no ingrese por medios convencionales -ascensor o escalera-.
+Nuestras Garantías:
+Al contratarnos te garantizamos:
+
+Maniobra de izaje segura y controlada.
+Puntualidad en cada servicio.
+Embalaje y protección de tu pieza (si lo requieren).
+Cómo Evaluamos tu Presupuesto (Presupuesto sin Cargo):
+Para ofrecerte un presupuesto, tenemos en cuenta:
+
+La cantidad de pisos.
+Carga a izar.
+Peso y metros de la carga.
+Zona donde se realiza.
+Base (balcón o terraza).
+Ofrecemos presupuesto sin cargo.
+
+Contacto
+Título de Sección:
+Contáctanos
+
+Información de Contacto:
+Teléfono: 1128064699
+Email: caldenelevaciones@gmail.com
+Instagram: @caldenelevaciones
+
+Cobertura:
+Cobertura en CABA, GBA e interior.
+
+recorda que en computadoras de escritorios debe verse la galería de imagenes de 3 por filas por 3 columnas! no una debajo de otra 
+
+cambiar los colores ... colores principales  blanco negros y otro color azul
+Los archivos deben ir separados en html css y js gs
+
+el vínculo al formulario de Google sheet debe estar en el js no en html
+
+DEBES ENTREGARME TODOS LOS CODIGOS separados y  COMPLETOS SIN OMITIR NADA
