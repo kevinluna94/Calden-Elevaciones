@@ -1,0 +1,41 @@
+# Robots.txt for Caldén Elevaciones
+# This file tells search engines how to crawl and index the website
+
+# Default rules for all crawlers
+User-agent: *
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /assets/
+
+# Disallow private or unnecessary directories
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*.pdf$
+
+# Specify crawl delay for respectful crawling (in seconds)
+Crawl-delay: 1
+
+# Specify the sitemap location
+Sitemap: https://caldenelevaciones.com/sitemap.xml
+
+# Google-specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+# Bing-specific rules
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /

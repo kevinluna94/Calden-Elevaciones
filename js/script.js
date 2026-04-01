@@ -43,39 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
-    // Video background switcher for mobile/desktop
-    function checkVideoSource() {
-        const heroVideo = document.getElementById('heroVideo');
-        if (!heroVideo) return;
-        
-        const sources = heroVideo.querySelectorAll('source');
-        const isMobile = window.innerWidth <= 768;
-        
-        // Check if we need to change the video source
-        const currentSource = heroVideo.currentSrc || heroVideo.src;
-        const mobileSource = sources[1].src;
-        const desktopSource = sources[0].src;
-        
-        if (isMobile && !currentSource.includes('mobile')) {
-            // Switch to mobile video
-            heroVideo.src = mobileSource;
-            heroVideo.load();
-            heroVideo.play();
-        } else if (!isMobile && !currentSource.includes('desktop')) {
-            // Switch to desktop video
-            heroVideo.src = desktopSource;
-            heroVideo.load();
-            heroVideo.play();
-        }
-    }
-    
-    // Check video on load and resize
-    if (document.getElementById('heroVideo')) {
-        checkVideoSource();
-        window.addEventListener('resize', checkVideoSource);
-    }
-    
+
     // Form validation and submission for contact page
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
