@@ -454,6 +454,83 @@ section {
     transition: var(--transition);
 }
 
+.gallery-item video,
+.gallery-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.gallery-section {
+    padding-top: clamp(1.75rem, 2.2vw, 2.25rem) !important;
+    padding-bottom: clamp(1.75rem, 2.2vw, 2.25rem) !important;
+}
+
+.gallery-feature-layout {
+    --gallery-feature-gap: 0.55rem;
+    --gallery-stack-item-height: clamp(82px, 8.5vh, 98px);
+    align-items: stretch;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-feature-layout > [class*="col-"] {
+    display: flex;
+}
+
+.gallery-feature-video-col,
+.gallery-feature-stack-col {
+    display: flex;
+}
+
+body.home-impact .gallery-feature-layout .gallery-feature-video-col .gallery-item-vertical-video {
+    width: 100%;
+    height: calc(var(--gallery-stack-item-height) * 2 + var(--gallery-feature-gap));
+}
+
+.gallery-right-stack {
+    width: 100%;
+    margin: 0;
+    row-gap: var(--gallery-feature-gap);
+}
+
+.gallery-right-stack > .col-12 {
+    display: flex;
+    padding: 0;
+}
+
+body.home-impact .gallery-feature-layout .gallery-right-stack .gallery-item {
+    flex: 1;
+    width: 100%;
+    height: var(--gallery-stack-item-height);
+}
+
+.gallery-feature-layout .gallery-overlay {
+    padding: 8px;
+}
+
+.gallery-feature-layout .gallery-overlay h3 {
+    font-size: 0.92rem;
+    margin-bottom: 2px;
+}
+
+.gallery-feature-layout .gallery-overlay p {
+    font-size: 0.72rem;
+    line-height: 1.25;
+    margin-bottom: 0;
+}
+
+.gallery-item-vertical-video {
+    background: #111111;
+}
+
+.gallery-item-vertical-video .gallery-video {
+    object-fit: cover;
+    object-position: center;
+}
+
 .gallery-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
@@ -461,6 +538,11 @@ section {
 
 .gallery-item:hover img {
     transform: scale(1.05);
+}
+
+.gallery-item:hover video,
+.gallery-item:hover .gallery-video {
+    transform: scale(1.03);
 }
 
 .gallery-overlay {
@@ -482,6 +564,73 @@ section {
 /* Map & CTA Section */
 .map-cta-section {
     background: var(--light-color);
+}
+
+.reviews-marquee-section {
+    background: linear-gradient(180deg, #f7f8f8 0%, #eef2f1 100%);
+    overflow: hidden;
+}
+
+.reviews-marquee {
+    overflow: hidden;
+    padding: 0 0 6px;
+}
+
+.reviews-track {
+    display: flex;
+    gap: 14px;
+    width: max-content;
+    animation: reviews-scroll 34s linear infinite;
+    will-change: transform;
+}
+
+.reviews-marquee:hover .reviews-track {
+    animation-play-state: paused;
+}
+
+.review-card {
+    width: 260px;
+    min-height: 150px;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 14px;
+    padding: 14px 14px 12px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.review-stars {
+    display: flex;
+    gap: 3px;
+    color: #f5b301;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.review-text {
+    font-size: 0.9rem;
+    line-height: 1.45;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+.review-meta strong {
+    display: block;
+    color: #111827;
+    font-size: 0.88rem;
+}
+
+.review-meta span {
+    color: #5b6472;
+    font-size: 0.8rem;
+}
+
+@keyframes reviews-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-50% - 7px));
+    }
 }
 
 .map-container {
@@ -1288,7 +1437,11 @@ section {
     }
     
     .gallery-item {
-        height: 250px;
+        height: 150px;
+    }
+
+    .gallery-feature-layout {
+        --gallery-stack-item-height: 150px;
     }
 
     .story-image,
@@ -1877,7 +2030,27 @@ body.home-impact .cta-impact-section .section-title::after {
     }
 
     body.home-impact .gallery-item {
-        height: 300px;
+        height: 160px;
+    }
+
+    body.home-impact .gallery-feature-layout {
+        --gallery-stack-item-height: clamp(82px, 8.5vh, 98px);
+    }
+}
+
+@media (max-width: 991.98px) {
+    .gallery-feature-layout {
+        --gallery-stack-item-height: 150px;
+        max-width: 100%;
+    }
+
+    body.home-impact .gallery-feature-layout .gallery-feature-video-col .gallery-item-vertical-video {
+        height: 250px;
+        min-height: 250px;
+    }
+
+    body.home-impact .gallery-feature-layout .gallery-right-stack .gallery-item {
+        height: 150px;
     }
 }
 
