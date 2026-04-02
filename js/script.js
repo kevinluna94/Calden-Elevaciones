@@ -23,6 +23,20 @@ document.addEventListener('DOMContentLoaded', function() {
             navbar.classList.remove('scrolled');
         }
     });
+
+    // Close mobile menu after selecting a nav link
+    const navbarCollapse = document.getElementById('navbarNav');
+    if (navbarCollapse && window.bootstrap && window.bootstrap.Collapse) {
+        const navLinks = navbarCollapse.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth < 992 && navbarCollapse.classList.contains('show')) {
+                    const collapse = window.bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
+                    collapse.hide();
+                }
+            });
+        });
+    }
     
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
