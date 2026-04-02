@@ -57,7 +57,7 @@ INSTRUCCIONES DE USO:
 
 1. REEMPLAZAR CONTENIDO:
    - Teléfono: Buscar "1128064699" y reemplazar
-   - Email: Buscar "caldenelevaciones@gmail.com"
+   - Email: Buscar "info@caldenelevaciones.com"
    - Instagram: Buscar "@caldenelevaciones"
    - Enlace desarrollador: Buscar "https://kevinluna.com"
 

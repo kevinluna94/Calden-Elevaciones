@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Form validation and submission for contact page
     const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
+    if (contactForm && typeof window.handleContactFormSubmit !== 'function') {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-            // If all validations pass, submit the form (in a real scenario, this would be to Google Sheets)
+            // Fallback local flow only when gs.js is not available
             showFormMessage('Enviando solicitud...', 'info');
             
             // Simulate form submission
