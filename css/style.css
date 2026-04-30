@@ -237,6 +237,20 @@ section {
     display: none;
 }
 
+.hero-video-desktop {
+    display: block;
+}
+
+@media (min-width: 769px) {
+    .hero-video-desktop {
+        display: block !important;
+    }
+
+    .hero-video-mobile {
+        display: none !important;
+    }
+}
+
 .video-overlay {
     position: absolute;
     top: 0;
